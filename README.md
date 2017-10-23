@@ -219,7 +219,12 @@ The trick is to let the Kinematics model run for 0.1 second and provide the endi
           // V has to be put last as previous two need original value of v.
           v += throttle*latency;
 ```
-
+## References
+[Udacity Q&A](https://www.youtube.com/watch?v=bOQuhpz3YfU&feature=youtu.be&utm_medium=email&utm_campaign=2017-06-05_carnd_term2_annoucements&utm_source=blueshift&utm_content=2017-06-01_carnd_announcements&bsft_eid=5d3d51b3-1acc-41d3-9f6d-cadc1f93a952&bsft_clkid=3c1ed177-5b5c-4984-8ef1-2d652f976c89&bsft_uid=854cf41a-b3be-483e-8dae-9bda36671140&bsft_mid=23eb4322-0db3-4446-bcb6-7a6f0ba16788)
+- [MPC Based Motion Control of Car-like Vehicle Swarms](https://www.isr.umd.edu/~baras/publications/papers/2007/07-06.pdf)
+- [Kinematic and Dynamic Vehicle Models for Autonomous Driving Control Design](http://www.me.berkeley.edu/~frborrel/pdfpub/IV_KinematicMPC_jason.pdf)
+- [MPC-Based Approach to Active Steering for Autonomous Vehicle Systems](http://www.me.berkeley.edu/~frborrel/pdfpub/pub-6.pdf)
+- [A New Nonlinear Model Predictive Control Algorithm for Vehicle Path Tracking](http://www.avec16.com/images/papers/61851.pdf)
 
 ## Dependencies
 
