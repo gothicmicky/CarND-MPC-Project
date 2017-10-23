@@ -1,7 +1,9 @@
 # CarND-Controls-MPC
 This project aims at using Model Predictive Controller (MPC) to control a vehicle to follow expected trajectory in a simulator. 
 
-[![MPC PROJECT OUTPUT](https://youtu.be/bRlzP9ducTU/0.jpg)](https://youtu.be/bRlzP9ducTU)
+![alt text][demo]
+
+[demo]: ./media/demo.gif
 
 ---
 ## Model Predictive Control
