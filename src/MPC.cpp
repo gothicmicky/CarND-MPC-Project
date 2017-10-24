@@ -172,6 +172,12 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
     vars_upperbound[i] = 0.436332;
   }
 
+  //Code review suggestion
+  //vars_lowerbound[delta_start]=prevDelta;
+  //vars_upperbound[delta_start]=prevDelta;
+  //vars_lowerbound[a_start]=prevA;
+  //vars_upperbound[a_start]=prevA;
+  
   // Acceleration/decceleration upper and lower limits.
   // NOTE: Feel free to change this to something else.
   for (unsigned int i = a_start; i < n_vars; i++) {
@@ -257,4 +263,14 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
   // creates a 2 element double vector.
   return {solution.x[delta_start],   solution.x[a_start]};
 
+  //Code review suggestion:
+  /*
+  take the next value instead (after 100ms)
+
+  return {solution.x[delta_start+1],  solution.x[a_start+1]};
+  then store it in variables for next run
+
+  prevDelta=solution.x[delta_start+1];
+  prevA=solution.x[a_start+1];
+  */
 }
